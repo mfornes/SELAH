@@ -2,75 +2,53 @@
 <html <?php language_attributes();?>>
 	<head>
 	<meta charset="<?php bloginfo('charset');?>"/>
-	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-<!-- 	<meta name="description" content="" />
-	<meta name="keywords" content="" />
-	<meta name="author" content="" /> -->
-
-  <!-- Facebook and Twitter integration -->
-<!-- 	<meta property="og:title" content=""/>
-	<meta property="og:image" content=""/>
-	<meta property="og:url" content=""/>
-	<meta property="og:site_name" content=""/>
-	<meta property="og:description" content=""/>
-	<meta name="twitter:title" content="" />
-	<meta name="twitter:image" content="" />
-	<meta name="twitter:url" content="" />
-	<meta name="twitter:card" content="" /> -->
-
-	<!-- <link href="https://fonts.googleapis.com/css?family=Rubik:300,400,500,700,900" rel="stylesheet"> -->
-	
+		
     <title><?php wp_title();?></title>
     <?php wp_head();?>
 
 	</head>
-	<body>
-		
-	<div class="colorlib-loader"></div>
+	<body <?php body_class();?>>
+		<div class="container">
+  			<header>
+				<nav class="menu">
+				<?php 
 
-	<div id="page">
-		<nav class="colorlib-nav" role="navigation">
-			<div class="upper-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-xs-4">
-							<p>The ideal WordPress theme for online learning center</p>
-						</div>
-						<div class="col-xs-6 col-md-push-2 text-right">
-							<p class="btn-apply"><a href="#">Our Vision</a> <a href="#">Our Missions</a> <a href="#">Sign Up</a></p>
-						</div>
-					</div>
+					$custom_logo_id = get_theme_mod( 'custom_logo' );
+					$logo = wp_get_attachment_image_src( $custom_logo_id , 'full' );
+					if ( has_custom_logo() ) {
+						echo '<a href="'. esc_url( home_url( '/' ) ) .'" class="logo "><img class="" src="'. esc_url( $logo[0] ) .'" alt="Home"/></a>';
+					} else {
+						echo '<a href="'. esc_url( home_url( '/' ) ) .'" class="logo"><h1>'. get_bloginfo( 'name' ) .'</h1></a>';
+					}
+				?> 			
+					<?php 
+						wp_nav_menu( 
+							array( 'theme_location' => 'header-menu',
+									'container_class' => 'text-links',
+									'fallback_cb' => false,
+						 	) 
+						);
+					
+					?>
+					
+					<ul class="icons-list">
+						<li><a href="" class="icon-link"><img src="<?php echo get_template_directory_uri() . '/assets/images/Recurso 40.png'; ?>" alt="Options"/></a></li>
+						<li><a href="" class="icon-link"><img src="<?php echo get_template_directory_uri() . '/assets/images/Recurso 69.png'; ?>" alt="Search"/></a></li>
+					</ul>
+				</nav>
+				<?php if ( get_header_image() ) : ?>
+					<div class="header-content" style="background: left 0% top 40% url(<?php header_image(); ?>)">					
+				<?php else : ?>
+					<div class="header-content">			
+				<?php endif; ?>
+				<h1>Why SELAH?</h1>
+				<h3>A Methodist Seminary <br> with excellence of they teachers</h3>
+				<div id="header-buttons">
+					<button class="main-button option2">Start Now</button>
+					<button class="main-button option1">Start Now</button>
+					<button class="main-button option3">Apply</button>      
 				</div>
-			</div>
-			<div class="top-menu">
-				<div class="container">
-					<div class="row">
-						<div class="col-md-2">
-							<div id="colorlib-logo"><a href="index.html">Knowledge</a></div>
-						</div>
-						<div class="col-md-10 text-right menu-1">
-							<ul>
-								<li class="active"><a href="index.html">Home</a></li>
-								<li class="has-dropdown">
-									<a href="courses.html">Courses</a>
-									<ul class="dropdown">
-										<li><a href="courses-single.html">Courses Single</a></li>
-										<li><a href="#">Mobile Apps</a></li>
-										<li><a href="#">Website</a></li>
-										<li><a href="#">Web Design</a></li>
-										<li><a href="#">WordPress</a></li>
-									</ul>
-								</li>
-								<li><a href="teachers.html">Teachers</a></li>
-								<li><a href="about.html">About</a></li>
-								<li><a href="event.html">Events</a></li>
-								<li><a href="news.html">News</a></li>
-								<li><a href="contact.html">Contact</a></li>
-								<li class="btn-cta"><a href="#"><span>Get started</span></a></li>
-							</ul>
-						</div>
-					</div>
 				</div>
-			</div>
-		</nav>
+  			</header>
+			  <main>
