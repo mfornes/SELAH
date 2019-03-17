@@ -44,33 +44,23 @@
       <h2 class="type1">news</h2>
       <h1 class="type1">Posts</h1>
       <div class="posts">
-        <div class="card-post">
-          <a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/card1.png'; ?>" alt=""></a>
-          <a class="detail-icon" href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/detail.svg'; ?>" alt=""></a>
+      <?php $args = array( 'category_name' => 'news', 'posts_per_page' => 3 );?>
+      <?php $the_query = new WP_Query( $args );?>
+      <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+        <div id="post-<?php the_ID(); ?>" <?php post_class("card-post"); ?>>
+          <a href="<?php echo get_permalink();?>"><?php the_post_thumbnail('post-image'); ?></a>
+          <a class="detail-icon" href="<?php echo get_permalink();?>"><img src="<?php echo get_template_directory_uri() . '/assets/images/detail.svg'; ?>" alt=""></a>
           <div class="text-bloq">
-            <h4>Preach, teach, and counsel with confi<wbr>dence and wisdom.</h4>
-            <p>Our expert faculty will provide you with an exceptional theological education 
-              so you can serve the church effectively in today's conflicted culture.</p>
+            <h4><?php the_title(); ?></h4>
+            <p><?php the_excerpt(); ?></p>
           </div>
         </div>
-        <div class="card-post">
-          <a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/card2.png'; ?>" alt=""></a>
-          <a class="detail-icon" href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/detail.svg'; ?>" alt="" ></a>
-          <div class="text-bloq">
-            <h4>Preach, teach, and counsel with confi<wbr>dence and wisdom.</h4>
-            <p>Our expert faculty will provide you with an exceptional theological education 
-              so you can serve the church effectively in today's conflicted culture.</p>
-          </div>
-        </div>
-        <div class="card-post">
-          <a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/card3.png'; ?>" alt=""></a>
-          <a class="detail-icon" href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/detail.svg'; ?>" alt=""></a>
-          <div class="text-bloq">
-            <h4>Preach, teach, and counsel with confi<wbr>dence and wisdom.</h4>
-            <p>Our expert faculty will provide you with an exceptional theological education 
-              so you can serve the church effectively in today's conflicted culture.</p>
-          </div>
-        </div>
+
+      <?php endwhile; else: ?>
+          <?php _e( 'Sorry, no posts matched your criteria.', 'textdomain' ); ?>
+      <?php endif; ?>
+      <?php wp_reset_postdata();?>  
       </div>
     </section>
     
@@ -121,33 +111,22 @@
       <h2 class="type1">out leadership</h2>
    
       <div class="trio">
-        <div class="stadistic-item">
-          <img src="<?php echo get_template_directory_uri() . '/assets/images/person1.png'; ?>" alt="">
-          <p> <strong>Dr John Doe </strong>
+      <?php $args = array( 'category_name' => 'leadership', 'posts_per_page' => 4 );?>
+      <?php $the_query = new WP_Query( $args );?>
+      <?php if ( $the_query->have_posts() ) : while ( $the_query->have_posts() ) : $the_query->the_post(); ?>
+
+        <div id="post-<?php the_ID(); ?>" <?php post_class("stadistic-item"); ?>>
+          <?php the_post_thumbnail('post-image'); ?>
+          <p> <strong><?php the_title(); ?></strong>
           <br>
-          Our expert faculty</p>
+          <?php the_excerpt(); ?></p>
         </div>
         
-        <div class="stadistic-item">
-          <img src="<?php echo get_template_directory_uri() . '/assets/images/person2.png'; ?>" alt="">
-          <p><strong>Dr John Doe </strong>
-          <br>
-          Our expert faculty</p>
-        </div>
-        
-        <div class="stadistic-item">
-          <img src="<?php echo get_template_directory_uri() . '/assets/images/person3.png'; ?>" alt="">
-          <p><strong>Dr John Doe </strong>
-          <br>
-          Our expert faculty</p>
-        </div>
-        
-        <div class="stadistic-item">
-          <img src="<?php echo get_template_directory_uri() . '/assets/images/person4.png'; ?>" alt="">
-          <p><strong>Dr John Doe </strong>
-          <br>
-          Our expert faculty</p>
-        </div>
+      <?php endwhile; else: ?>
+          <?php _e( 'Sorry, no posts matched your criteria.', 'textdomain' ); ?>
+      <?php endif; ?>
+      <?php wp_reset_postdata();?>     
+
       </div>
       <hr class="lid1">
       <br>
