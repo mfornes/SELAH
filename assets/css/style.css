@@ -56,7 +56,7 @@ nav.menu ul {
   margin: 0;
 }
 
-ul#menu-menu {
+ul.menu {
   padding: 0;
   width: 80vw;
   display: flex;
@@ -64,11 +64,11 @@ ul#menu-menu {
   align-items: center;
 }
 
-ul#menu-menu li {
+ul.menu li {
 	transition: all 0.3s linear;
 }
 
-ul#menu-menu a {
+ul.menu a {
 	color: #333333;
   font-family: Aleo-Bold;
   font-size: 13pt;
@@ -80,7 +80,7 @@ ul#menu-menu a {
   padding-right: 10pt;
 }
 
-ul#menu-menu a:hover {
+ul.menu a:hover {
 	color: #B6282C;
   border-bottom: solid 4px #B6282C;
 }
