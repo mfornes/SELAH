@@ -25,7 +25,7 @@
 			</div>
 			<br><br><br>
 			<ul>
-				<li><p><img src="<?php echo get_template_directory_uri() . '/assets/images/Recurso 17.png'; ?>" alt="" width="39px" height="30px"> <a href="mailto:aselahseminary@info.org"> aselahseminary@info.org</a> </p></li> 
+				<li><p><img src="<?php echo get_template_directory_uri() . '/assets/images/Recurso 17.png'; ?>" alt="" width="39px" height="30px"> <a href="mailto:selahseminary@info.org"> selahseminary@info.org</a> </p></li> 
 				<li><p><img src="<?php echo get_template_directory_uri() . '/assets/images/Recurso 18.png'; ?>" alt="" width="43px" height="39px"> <a href=""> 234 Street Bldn 34 corner 5 Maryland</a></p></li>
 				<li><p><img src="<?php echo get_template_directory_uri() . '/assets/images/Recurso 16.png'; ?>" alt="" width="39px" height="36px"> (800)893974 550 5040</p></li>
 			</ul>			

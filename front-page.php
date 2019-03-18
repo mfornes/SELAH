@@ -75,7 +75,7 @@
     </section>
     
     <section class="stadistics">
-      <h1 class="type2">Stadistics</h1>
+      <h1 class="type2">Statistics</h1>
       <br>
       <br>
       <div class="trio">
@@ -118,7 +118,7 @@
     
     <section class="leadership">
       <h1 class="type1">About</h1>
-      <h2 class="type1">out leadership</h2>
+      <h2 class="type1">our leadership</h2>
    
       <div class="trio">
         <div class="stadistic-item">
