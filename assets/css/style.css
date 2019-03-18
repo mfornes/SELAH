@@ -56,7 +56,7 @@ nav.menu ul {
   margin: 0;
 }
 
-ul.text-links {
+ul#menu-menu {
   padding: 0;
   width: 80vw;
   display: flex;
@@ -64,11 +64,11 @@ ul.text-links {
   align-items: center;
 }
 
-ul.text-links li {
+ul#menu-menu li {
 	transition: all 0.3s linear;
 }
 
-ul.text-links a {
+ul#menu-menu a {
 	color: #333333;
   font-family: Aleo-Bold;
   font-size: 13pt;
@@ -80,12 +80,14 @@ ul.text-links a {
   padding-right: 10pt;
 }
 
-ul.text-links a:hover {
+ul#menu-menu a:hover {
 	color: #B6282C;
   border-bottom: solid 4px #B6282C;
 }
 
 ul.icons-list {
+  margin-left: auto !important;
+  margin-right: 1rem !important;
   padding: 0;
   display: flex;
 }
