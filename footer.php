@@ -8,7 +8,14 @@
 			
 			<div class="block">
 			<a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/logo2.png'; ?>" alt=""></a>
-	
+	    <br><br><br>   
+        <div class="">
+          <form id="form-comment" action="">
+            <input type="text" name="name" id="name" placeholder="Name">
+            <input type="email" name="email" id="email" placeholder="Email">
+            <button type="submit" class="form-btn">Suscribe Now</button>
+          </form>
+        </div>
 			</div>
 			
 			<div id="social-info" class="block">
