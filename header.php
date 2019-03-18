@@ -43,7 +43,7 @@
 					<div class="header-content">			
 				<?php endif; ?>
 				<h1>Why SELAH?</h1>
-				<h3>A Methodist Seminary <br> with excellence of they teachers</h3>
+				<h3>A Methodist Seminary <br> with excellence of their teachers</h3>
 				<div id="header-buttons">
 					<button class="main-button option2">Start Now</button>
 					<button class="main-button option1">Start Now</button>
