@@ -7,7 +7,7 @@
 		<div class="footer-content">
 			
 			<div class="block">
-			<a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/logo2.png'; ?>" alt=""></a>
+			<a href=""><img src="<?php echo get_template_directory_uri() . '/assets/images/identidad/identidad_latest2.png'; ?>" alt="" width="230" height="80"></a>
 	    <br><br><br>   
         <div class="">
           <form id="form-comment" action="">
