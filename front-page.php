@@ -6,9 +6,7 @@
         <p>Our expert faculty will provide you with an exceptional theological education 
           so you can serve the church effectively in today's conflicted culture.</p>
       </div>
-      <div class="group"> 
-<!--        <img src="images/Recurso 62.png" alt="">-->
-        
+      <div class="group">         
         <video controls height="360px">
           <source src="<?php echo get_template_directory_uri() . '/assets/video/Blue-Bottle.mp4'; ?>" type="video/mp4">
           Sorry, your browser doesn't support embedded videos.
