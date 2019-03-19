@@ -5,7 +5,7 @@ if (!function_exists('cursos_iglesia_theme_setup')):
 function cursos_iglesia_theme_setup() {
     // load_theme_textdomain( 'myfirsttheme', get_template_directory() . '/languages' );
     add_theme_support('post-thumbnails');
-    set_post_thumbnail_size( 298, 176, true );
+//    set_post_thumbnail_size( 298, 176, true );
     add_theme_support('custom-background');  
     add_theme_support('title-tag');
     add_theme_support('html5', array('comment-list', 'comment-form', 'search-form', 'gallery', 'caption'));
