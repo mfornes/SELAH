@@ -31,11 +31,12 @@ nav.menu {
   z-index: 99;
 }
 
+/*
 nav.menu:hover {
   padding: 0.6rem 2rem;
-/*  height 82*/
   box-shadow: 0px 2px 15px black;
 }
+*/
 
 a img {
   display: block;
@@ -199,8 +200,12 @@ button.main-button {
 /* SECTIONS */
 
 section {
-  text-align: center;
   padding: 4rem 5rem;
+  
+}
+
+.text-align-center {
+  text-align: center !important;
   
 }
 
@@ -237,7 +242,7 @@ section.first .group {
 
 .center-content-text {
   width: 50vw;
-  margin: auto;
+  margin: auto ;
 }
 
 .side-content-text {
