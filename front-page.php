@@ -1,13 +1,13 @@
 <?php get_header();?>
 
     <section class="first">
-      <div class="text-group center-content-text">
+      <div class="text-group center-content-text text-align-center">
         <h4>Preach, teach, and counsel with confidence and wisdom.</h4>
         <p>Our expert faculty will provide you with an exceptional theological education 
           so you can serve the church effectively in today's conflicted culture.</p>
       </div>
       <div class="group">         
-        <video controls height="360px">
+        <video controls autoplay loop height="360px">
           <source src="<?php echo get_template_directory_uri() . '/assets/video/Blue-Bottle.mp4'; ?>" type="video/mp4">
           Sorry, your browser doesn't support embedded videos.
         </video>
@@ -38,7 +38,7 @@
       </div>
     </section>
     
-    <section class="third">
+    <section class="third text-align-center">
       <h2 class="type1">news</h2>
       <h1 class="type1">Posts</h1>
       <div class="posts">
@@ -62,7 +62,7 @@
       </div>
     </section>
     
-    <section class="stadistics">
+    <section class="stadistics text-align-center">
       <h1 class="type2">Statistics</h1>
       <br>
       <br>
@@ -104,7 +104,7 @@
       <hr class="lid2">
     </section>
     
-    <section class="leadership">
+    <section class="leadership text-align-center">
       <h1 class="type1">About</h1>
       <h2 class="type1">our leadership</h2>
    
@@ -140,7 +140,7 @@
       <hr class="lid2">
     </section>
     
-    <section class="thinking">
+    <section class="thinking text-align-center">
       <h1 class="type2">WHERE NEED <br>
           MEETS OPPORTUNITY</h1>
       <hr class="lid1">
