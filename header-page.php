@@ -37,8 +37,8 @@
 						<li><a href="" class="icon-link"><img src="<?php echo get_template_directory_uri() . '/assets/images/Recurso 69.png'; ?>" alt="Search"/></a></li>
 					</ul>
 				</nav>
-                <div class="header-content" style="  background: left 0% top 80% url(<?php the_post_thumbnail_url() ?>)">
-                     <h1 class="faculty"><?php the_title();?></h1>
+                <div class="header-content-page" style="  background: left 0% top 80% url(<?php the_post_thumbnail_url() ?>)">
+                     <h1><?php the_title();?></h1>
                 </div>
   			</header>
 			  <main>
